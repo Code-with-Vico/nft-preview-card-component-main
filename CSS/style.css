@@ -6,86 +6,108 @@
 
 body {
     background: hsl(217, 54%, 11%);
-    font-family: sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 98vh;
+    height: 97vh;
 }
 
-.main {
+.card {
     background: hsl(216, 50%, 16%);
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
+    justify-content: center;
     width: 16rem;
-    padding: 1rem 1rem 0;
+    padding: 1rem;
     border-radius: 0.6rem;
 }
 
-.main .showcase {
+.showcase {
+    background: url("/images/image-equilibrium.jpg") no-repeat center center/cover;
     width: 14rem;
+    height: 240px;
+    transition: 0.9s ease-in-out;
     border-radius: 0.5rem;
 }
 
-.main .showcase ,
-.main p ,
-.main span ,
-.main hr {
-    margin-bottom: 1rem;
+/* ACTIVE STATE */
+.showcase:hover {
+    background: cyan url("/images/icon-view.svg") no-repeat center center;
+    opacity: 0.5;
+    filter: brightness(1.3);
 }
 
-.main p:nth-child(2) {
-    color: hsl(0, 0%, 100%);
-    /* font-weight: 600; */
-}
-
-.main p, span {
+.card p, span {
     color: hsl(215, 51%, 70%);
 }
 
-.main p:nth-child(3) {
-    font-size: 0.88rem;
+.showcase, .main-text, .value, hr {
+    margin-bottom: 1rem;
 }
 
-.main .value {
+.main-text h4 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.main-text p {
+    font-size: 0.88rem;
+    font-weight: 300;
+}
+
+.value {
     display: flex;
     flex-direction: row;
-    text-align: center;
     justify-content: space-between;
     font-size: 0.88rem;
+    font-weight: 400;
 }
 
-.value span:nth-child(1) {
+.crypto {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.crypto span {
     color: hsl(178, 100%, 50%);
 }
 
-.main hr {
+.time {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+hr {
     border-color: hsl(215, 32%, 27%);
 
 }
 
-.profile p {
-    font-size: 0.88rem;
-    /* text-align: center; */
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
 }
 
 .profile img {
     width: 2rem;
 }
 
+.profile p {
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
 .profile span {
     color: hsl(0, 0%, 100%);
 }
 
-   /* ACTIVE STATE */
-   .showcase img:active {
-        background: aqua;
-   }
-
-.attribution { font-size: 11px; text-align: center; }
+.attribution { color: white; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
