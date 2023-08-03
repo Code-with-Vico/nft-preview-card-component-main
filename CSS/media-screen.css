@@ -1,8 +1,31 @@
         /* MOBILE */
 
 @media (max-width: 450px) {
-    .main {
+    .card {
         width: 100%;
         height: 100%;
+        justify-content: space-between;
+    }
+
+    .showcase {
+        width: 100%;
+        height: 55%;
+    }
+
+    .main-text h4{
+        font-size: 1.5rem;
+    }
+
+    .main-text p {
+        font-size: 1.1rem;
+    }
+
+    .value span {
+        font-size: 1.2rem;
+    }
+
+    .profile p{
+        font-size: 1.1rem;
+        text-align: center;
     }
 }
